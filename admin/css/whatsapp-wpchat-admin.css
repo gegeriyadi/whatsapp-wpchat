@@ -1,0 +1,21 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+.whatsapp-wpchat-admin label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.whatsapp-wpchat-admin .form-group {
+	margin-bottom: 20px;
+}
+
+.whatsapp-wpchat-admin .card {
+	padding: .7em 2em 2em;
+}
+
+.whatsapp-wpchat-admin input#nomorWhatsapp, .whatsapp-wpchat-admin input#cta {
+	width: 250px;
+}
