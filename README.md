@@ -17,6 +17,9 @@ This plugin lets you add a click to chat button at the bottom of your website. A
 
 ### Screenshots ###
 
+1. Widget Display
+2. Setting plugin page
+
 ![whatsapp wp chat screenshot](https://gegeriyadi.com/wp-content/uploads/2018/01/2018-01-17_151321.png)
 
 ### Contact & Feedback ###
