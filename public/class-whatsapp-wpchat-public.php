@@ -101,7 +101,8 @@ class Whatsapp_Wpchat_Public {
 	}
 
 	public function whatsapp_wpchat_widget() {
-		// get data options
+		
+		// // get data options
 		$data = get_option('whatsapp-wpchat');
 
 		if ($data == 0) {
@@ -115,8 +116,8 @@ class Whatsapp_Wpchat_Public {
 				. stripslashes($data['isiChat']);
 		}
 
-		echo '<a href="' . $whatsappApi . '" class="wac-stickytext">'
-			. $data['cta'] .' <div class="wac-wa"></div></a>';
+		include_once( 'partials/whatsapp-wpchat-public-display.php' );
+
 	}
 
 }

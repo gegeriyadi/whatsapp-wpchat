@@ -14,3 +14,8 @@
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
+
+<a href="<?= $whatsappApi ?>" class="wac-stickytext">
+	<?= $data['cta'] ?>
+	<div class="wac-wa"></div>
+</a>
