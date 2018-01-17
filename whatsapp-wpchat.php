@@ -14,8 +14,8 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Whatsapp WP Chat
- * Plugin URI:        https://gegeriyadi.com/whatsapp-wp-chat
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin URI:        https://gegeriyadi.com/whatsapp-wpchat
+ * Description:       A simple click to chat button WhatsApp plugin.
  * Version:           1.0.0
  * Author:            Gege Riyadi
  * Author URI:        https://gegeriyadi.com
