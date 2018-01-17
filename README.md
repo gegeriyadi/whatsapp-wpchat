@@ -8,7 +8,7 @@ This plugin lets you add a click to chat button at the bottom of your website. A
 
 ### Installation ###
 
-** Manual **
+**Manual**
 
 1. Download the plugin as a [ZIP](https://github.com/gegeriyadi/whatsapp-wpchat/archive/master.zip) file from GitHub.
 2. In your WordPress admin click *Plugin -> Add New -> Upload Plugin.*
