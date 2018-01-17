@@ -107,7 +107,7 @@ class Whatsapp_Wpchat_Admin {
 	        'WhatsApp WP Chat',
 	        'WA-Wp Chat',
 	        'manage_options',
-	        'whatsapp-wp-chat',
+	        'whatsapp-wpchat',
 	        array( $this, 'display_plugin_setup_page' )
 	    );
 	}
@@ -130,6 +130,18 @@ class Whatsapp_Wpchat_Admin {
 
 		// show form on admin page
 		include_once( 'partials/whatsapp-wpchat-admin-display.php' );
+	}
+
+	/**
+	 * Add plugin setting link
+	 */
+	function plugin_action_links( $links ) {
+
+		$settings_link = '<a href="tools.php?page=whatsapp-wpchat">' . __( 'Settings', 'whatsapp-wpchat' ) . '</a>';
+
+		array_push( $links, $settings_link );
+
+		return $links;
 	}
 
 }
