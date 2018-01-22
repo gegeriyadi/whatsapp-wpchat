@@ -100,6 +100,10 @@ class Whatsapp_Wpchat_Admin {
 
 	}
 
+	public function admin_init_register() {
+		register_setting( 'whatsapp-wpchat-group', 'whatsapp_wpchat' );
+	}
+
 	public function whatsapp_wpchat_options_page()
 	{
 	    add_submenu_page(
@@ -114,20 +118,9 @@ class Whatsapp_Wpchat_Admin {
 
 	public function display_plugin_setup_page() {
 
-		if (isset($_POST['nomorWhatsapp'])) {
-
-			$store = [
-				'nomorWhatsapp' => $_POST['nomorWhatsapp'],
-				'cta' => $_POST['cta'],
-				'isiChat' => $_POST['isiChat']
-			];
-
-			update_option('whatsapp-wpchat', $store);
-		}
-
 		// get option
-		$data = get_option('whatsapp-wpchat');
-
+		$data = get_option('whatsapp_wpchat');
+		
 		// show form on admin page
 		include_once( 'partials/whatsapp-wpchat-admin-display.php' );
 	}

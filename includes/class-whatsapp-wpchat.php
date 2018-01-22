@@ -156,6 +156,8 @@ class Whatsapp_Wpchat {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'admin_init_register' );
+
 		// add admin menu
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'whatsapp_wpchat_options_page' );
 
