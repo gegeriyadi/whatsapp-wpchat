@@ -103,7 +103,7 @@ class Whatsapp_Wpchat_Public {
 	public function whatsapp_wpchat_widget() {
 		
 		// // get data options
-		$data = get_option('whatsapp-wpchat');
+		$data = get_option('whatsapp_wpchat');
 
 		if ($data == 0) {
 			// whatsapp api url
