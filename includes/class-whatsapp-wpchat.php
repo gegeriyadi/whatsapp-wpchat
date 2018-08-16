@@ -67,8 +67,8 @@ class Whatsapp_Wpchat {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
-			$this->version = PLUGIN_NAME_VERSION;
+		if ( defined( 'WHATSAPP_WPCHAT' ) ) {
+			$this->version = WHATSAPP_WPCHAT;
 		} else {
 			$this->version = '1.0.0';
 		}
