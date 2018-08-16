@@ -160,10 +160,6 @@ class Whatsapp_Wpchat {
 
 		// add admin menu
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'whatsapp_wpchat_options_page' );
-
-		// add settings link
-		$plugin_file = 'whatsapp-wpchat/whatsapp-wpchat.php';
-		$this->loader->add_filter( "plugin_action_links_$plugin_file", $plugin_admin, 'plugin_action_links' );
 	}
 
 	/**

@@ -46,6 +46,17 @@ function activate_whatsapp_wpchat() {
 	Whatsapp_Wpchat_Activator::activate();
 }
 
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'configure_action_link' );
+/**
+ * Show a "Configure" link in the plugin action links.
+ *
+ * @since 1.5
+ */
+function configure_action_link( $links ) {
+	$configuration_link = '<a href="' . admin_url( 'tools.php?page=whatsapp-wpchat' ) . '">' . __( 'Configure', 'whatsapp-wpchat' ) . '</a>';
+	return array_merge( $links, array( $configuration_link ) );
+}
+
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-whatsapp-wpchat-deactivator.php

@@ -125,16 +125,4 @@ class Whatsapp_Wpchat_Admin {
 		include_once( 'partials/whatsapp-wpchat-admin-display.php' );
 	}
 
-	/**
-	 * Add plugin setting link
-	 */
-	function plugin_action_links( $links ) {
-
-		$settings_link = '<a href="tools.php?page=whatsapp-wpchat">' . __( 'Settings', 'whatsapp-wpchat' ) . '</a>';
-
-		array_push( $links, $settings_link );
-
-		return $links;
-	}
-
 }
