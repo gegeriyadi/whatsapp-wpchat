@@ -3,7 +3,7 @@
  * included in this file.
  */
 
- .wac-sticky-widget {
+a.wac-stickytext {
     width: auto;
     max-width: 500px;
     height: 40px;
@@ -23,10 +23,6 @@
     -moz-border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-}
-
-.wac-sticky-widget a.wac-stickytext {
-    color: #fff;
 }
 
 .wac-stickytext .wac-wa {

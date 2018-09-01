@@ -15,9 +15,7 @@
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 
-<div class="wac-sticky-widget">
-	<a href="<?= $whatsappApi ?>" class="wac-stickytext">
-		<?= $data['cta'] ?>
-		<div class="wac-wa"></div>
-	</a>
-</div>
+<a href="<?= $whatsappApi ?>" class="wac-stickytext">
+    <?= $data['cta'] ?>
+    <div class="wac-wa"></div>
+</a>
