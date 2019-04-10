@@ -177,7 +177,7 @@ class Whatsapp_Wpchat {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 		// call widget on front end
-		$this->loader->add_action( 'get_sidebar', $plugin_public, 'whatsapp_wpchat_widget' );
+		$this->loader->add_action( 'get_footer', $plugin_public, 'whatsapp_wpchat_widget' );
 
 	}
 
